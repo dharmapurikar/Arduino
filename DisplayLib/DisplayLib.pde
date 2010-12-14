@@ -4,11 +4,12 @@
 int ROWS = 4;
 int COLS = 20;
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
-Display screen(ROWS, COLS, &lcd);
+Display screen(lcd);
 
 void setup(){
   // initialize the serial communications:
   Serial.begin(9600);
+  screen.begin(ROWS, COLS);
 }
 
 void loop()

@@ -1,5 +1,5 @@
 h1. Arudino Projects
 
-p<>. This is my collection of Arduino projects. I have wrote these pieces as I was learning how to program for this fantastic open-source micro-controller. You can find more information about  "arduino ":http://www.arduino.cc 
+p<>. This is my collection of Arduino projects. I have wrote these pieces as I was learning how to program for this fantastic open-source micro-controller. You can find more information about  "arduino":http://www.arduino.cc 
 
-p<>. I haven't wrote c++ in long time and it was great pleasure to do it in arduino IDE. You can freely copy and modify source-code. You can use all code under Creative commons "Attribution (CC-BY)" licen
+p<>. I haven't wrote c++ in long time and it was great pleasure to do it in arduino IDE. You can freely copy and modify source-code. You can use all code under Creative commons "Attribution (CC-BY)" license.

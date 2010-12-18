@@ -3,7 +3,7 @@
 
 int ROWS = 4;
 int COLS = 20;
-boolean flag = false;
+boolean COMMAND_MODE = false;
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 Display screen(lcd);
 
@@ -20,22 +20,23 @@ void loop()
 }
 
 void handleCommands(){
-  if(flag){
+  if(COMMAND_MODE){
     Serial.println("You can scroll up or down with arrow now.");
     while(true){
       while (Serial.available() > 0) {
         int command = Serial.read();
         switch(command){
-        case 106:
+        case 106: // Scroll up
           Serial.println("Scrolling up");
           screen.scrollUp();
           break;
-        case 107:
+        case 107: // Scroll down
           Serial.println("Scrolling down");
           screen.scrollDown();
           break;
         default:
-          Serial.println("Unknown command");
+          Serial.print("Unknown command: ");
+          Serial.println(command);
         }
       }
     }
@@ -47,7 +48,7 @@ void loadText(){
   if (Serial.available()) {
     int received_chars = 0;
     // wait a bit for the entire message to arrive
-    delay(100);
+    delay(500);
     screen.erase();
     // read all the available characters
     while (Serial.available() > 0) {
@@ -57,9 +58,10 @@ void loadText(){
     screen.save('#');
     screen.clear();
     screen.paint();
-    flag = true;
+    COMMAND_MODE = true;
   }
 }
+
 
 
 

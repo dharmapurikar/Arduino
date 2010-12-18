@@ -32,6 +32,9 @@ void Display::erase(){
       screen[r][c] = ' ';   
     }
   }
+  for(int c = 0; c < 512; c++){
+    buffer[c] = ' ';
+  }
   paint();	
 }
 

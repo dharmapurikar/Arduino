@@ -3,7 +3,7 @@
 const unsigned int LED_BIT0 = 10;
 const unsigned int LED_BIT1 = 11;
 const unsigned int LED_BIT2 = 12;
-const unsigned int START_BUTTON_PIN = 7;
+const unsigned int START_BUTTON_PIN = 3;
 const unsigned int GUESS_BUTTON_PIN = 5;
 const unsigned int BAUD_RATE = 9600;
 

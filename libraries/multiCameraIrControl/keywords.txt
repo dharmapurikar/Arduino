@@ -1,0 +1,8 @@
+Nikon	KEYWORD1
+Canon	KEYWORD1
+Pentax	KEYWORD1
+Olympus	KEYWORD1
+Minolta	KEYWORD1
+Sony	KEYWORD1
+shotNow	KEYWORD2
+shotDelayed	KEYWORD2
